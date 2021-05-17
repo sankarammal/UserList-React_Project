@@ -1,0 +1,50 @@
+.Home {
+  font-family: "Open Sans", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.Nav {
+  position: relative;
+  background-color: rgb(0, 0, 0, 0.7);
+  height: 56px;
+  box-sizing: border-box;
+  padding: 10px 80px;
+}
+
+.App-header > h2 {
+  margin: 0;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+.users {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.users > .loader {
+  border: 12px solid #f3f3f3;
+  border-top: 12px solid #2e67a0;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  animation: spin 2s linear infinite;
+}
+
+.errorMessage {
+  margin: auto;
+  font-weight: bold;
+  color: rgb(161, 15, 15);
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
